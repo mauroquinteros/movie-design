@@ -149,3 +149,45 @@ li {
   display: block;
   width: 100%;
 }
+/* --- Menu Option --- */
+.menu-option {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 103, 102, 1) 0%,
+    rgba(255, 141, 118, 1) 100%
+  );
+  z-index: 1;
+  height: 100vh;
+  width: calc(100vw * 0.10);
+  position: fixed;
+  padding-top: 4.2rem;
+  transition: .3s;
+}
+.nav-option{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr) 2fr 1fr;
+  gap: 1rem;
+  height: calc(100vh - 4.2rem);
+  padding: 1em;
+}
+.option-item{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  color: var(--white-color);
+  font-size: 1em;
+}
+.option-wrapper{
+  width: 50px;
+}
+.option-wrapper img{
+  width: 100%;
+}
+.option-item span{
+  display: inline-block;
+  text-align: center;
+}
