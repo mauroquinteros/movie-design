@@ -44,3 +44,108 @@ li {
     ". list-movie list-movie list-movie"
     ". list-movie list-movie list-movie";
 }
+.burger-button{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2rem;
+  left: 150px;
+  background: rgba(255, 141, 118, 1) 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.burger-button img{
+  display: none;
+  width: 25px;
+}
+/* --- Header --- */
+.header {
+  grid-area: header;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  height: 4.2rem;
+  background-color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  box-shadow: var(--shadow);
+}
+/* -- Header-logo -- */
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  max-width: 175px;
+}
+.logo-wrapper {
+  width: 30%;
+}
+.logo-wrapper img {
+  width: 100%;
+}
+.logo span {
+  display: inline-block;
+  font-size: 1.9rem;
+  color: var(--white-color);
+  -webkit-text-stroke: 1px var(--main-color);
+}
+/* -- Header-form -- */
+.form-search {
+  display: flex;
+  width: 48%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid var(--border-color);
+  padding-right: 0.8em;
+  overflow: hidden;
+}
+.form-search:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.form-search input {
+  display: block;
+  width: calc(100% - 20px);
+  height: 100%;
+  padding: 0 2em;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+.form-search label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* -- Header-user -- */
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+}
+.user span {
+  font-size: 1rem;
+}
+.user-image {
+  max-width: 48px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-image img {
+  display: block;
+  width: 100%;
+}
