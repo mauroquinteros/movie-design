@@ -44,3 +44,65 @@ li {
     ". list-movie list-movie list-movie"
     ". list-movie list-movie list-movie";
 }
+/* --- Main --- */
+.main {
+  display: grid;
+  grid-area: list-movie;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1rem;
+  margin-top: 4.2rem;
+}
+/* -- Main-section-movie */
+.title-section{
+  margin: .6rem 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.list-movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  justify-content: center;
+  gap: 1.5rem;
+}
+/* -- Main-movie-item -- */
+.movie-item {
+  display: block;
+  position: relative;
+  color: var(--white-color);
+  box-shadow: var(--shadow-movie);
+}
+.movie-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.movie-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.movie-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: var(--main-color-degraded);
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  text-align: center;
+  padding: .5em 1em;
+  transition: .3s;
+}
+.movie-item:hover .movie-details{
+  top: 0;
+}
+.movie-details h4{
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.movie-details p{
+  text-align: justify;
+}
