@@ -1,0 +1,102 @@
+@media screen and (min-width: 1445px) {
+  /* -- Main -- */
+  .list-movie {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* -- Menu-option -- */
+  .nav-option {
+    padding: 0.2em;
+    gap: 0.1rem;
+  }
+  .option-wrapper {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 910px) {
+  /* -- Header -- */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 7rem;
+    padding: .5rem 2.5rem;
+  }
+  .form-search {
+    width: 70%;
+  }
+  .user {
+    display: none;
+  }
+  /* -- Menu Option -- */
+  .menu-option {
+    padding-top: 7rem;
+  }
+  .nav-option {
+    height: calc(100vh - 7rem);
+  }
+  .option-item{
+    padding: 0;
+  }
+  /* -- Main -- */
+  .main{
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* -- Menu-option -- */
+  .nav-option {
+    padding: 0.2em 0;
+    gap: 0.1rem;
+  }
+  .option-item {
+    padding: 0.2em;
+  }
+}
+@media screen and (max-width: 790px) {
+  /* -- Burger button -- */
+  .burger-button {
+    display: flex;
+  }
+  .burger-button img {
+    display: block;
+  }
+  /* -- Header -- */
+  .form-search {
+    width: 90%;
+  }
+  /* -- Menu-option -- */
+  .menu-option {
+    left: -150px;
+    width: 150px;
+    z-index: 4;
+    padding: 3rem 0;
+    font-size: .8rem;
+  }
+  .menu-option.active{
+    left: 0;
+  }
+  .option-wrapper{
+    width: 35px;
+  }
+  /* -- Main -- */
+  .grid {
+    grid-template-areas:
+    "list-movie list-movie list-movie list-movie"
+    "list-movie list-movie list-movie list-movie"
+    "list-movie list-movie list-movie list-movie";
+  }
+  .list-movie {
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+  }
+}
+@media screen and (max-width:400px){
+  /* -- Main -- */
+  .list-movie {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+  }
+}
